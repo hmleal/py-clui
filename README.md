@@ -6,6 +6,8 @@ It also includes the following easy to use components:
 
 ### Spinner(message, style=None)
 
+![Picture of a spinner](https://raw.githubusercontent.com/hmleal/py-clui/master/docs/spinner.gif)
+
 __Parameters__
 
 * `message` - The default status text to display while the spinner is spinning.
