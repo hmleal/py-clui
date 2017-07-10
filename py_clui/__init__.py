@@ -6,7 +6,7 @@
 import math
 import sys
 
-from py_clui.colorize import Colorize
+from colorize import Colorize
 
 __author__ = 'Henrique Leal'
 __author_email__ = 'hm.leal@hotmail.com'
@@ -47,12 +47,11 @@ class Spinner:
         self.message = message
 
     def _draw(self):
-        frames = ['  \u001b[96m{0} '.format(el) for el in self.style]
-        msg = '\u001b[0G{0}\u001b[90m{1}\u001b[0m'
-
         self._number += 1
 
-        print(msg.format(frames[self._number % len(self.style)], self.message), end='\r', file=sys.stdout, flush=True)
+        frames = [' {0} '.format(c.light_blue(f)) for f in self.style]
+
+        print('{0}{1}'.format(frames[self._number % len(self.style)], c.grey(self.message)), end='\r', file=sys.stdout, flush=True)
 
     def _style(self, style):
         if style is not None:
