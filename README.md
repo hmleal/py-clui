@@ -2,7 +2,9 @@
 > This is a Python toolkit for quickly building nice looking command line interfaces.
 
 It also includes the following easy to use components:
+
 * Spinners
+* Gauge
 
 ### Spinner(message, style=None)
 
@@ -30,6 +32,33 @@ spinner.run()
 for x in range(100):
     spinner.update_msg('{0} Processed documents'.format(x))
     spinner.run()
+```
+
+### Gauge(value, max_value, width, danger_zone, suffix=None)
+
+![Picture of a gauge](https://raw.githubusercontent.com/hmleal/py-clui/master/docs/gauge.png)
+
+Draw a basic horizontal gauge to the screen.
+
+Parameters
+
+* `value`
+* `max_value`
+* `width`
+* `danger_zone`
+* `suffix`
+
+Example
+
+```python
+from py_clui import gauge
+
+total = 100
+free = 30
+
+used = total - free
+
+print(gauge(used, total, 20, total * 0.8, 'Used memory'))
 ```
 
 ## Motivation
