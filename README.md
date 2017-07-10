@@ -1,6 +1,8 @@
 # Py-clui
 > This is a Python toolkit for quickly building nice looking command line interfaces.
 
+[![Build Status](https://travis-ci.org/hmleal/py-clui.svg?branch=master)](https://travis-ci.org/hmleal/py-clui)
+
 It also includes the following easy to use components:
 
 * Spinners
