@@ -1,5 +1,3 @@
-#!/usr/bin/env python
-
 class Colorize:
     def _colorize(self, color_code, text):
         return '\033[{0}m{1}\33[0m'.format(color_code, text)
@@ -24,20 +22,3 @@ class Colorize:
 
     def light_blue(self, text):
         return self._colorize('36', text)
-
-
-if __name__ == '__main__':
-    c = Colorize()
-
-    samples = [
-        c.grey('Henrique'),
-        c.red('Henrique'),
-        c.green('Henrique'),
-        c.yellow('Henrique'),
-        c.blue('Henrique'),
-        c.pink('Henrique'),
-        c.light_blue('Henrique')
-    ]
-
-    for x in samples:
-        print(x)
