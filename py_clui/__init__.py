@@ -6,7 +6,7 @@
 import math
 import sys
 
-from colorize import Colorize
+from .colorize import Colorize
 
 __author__ = 'Henrique Leal'
 __author_email__ = 'hm.leal@hotmail.com'
@@ -16,7 +16,7 @@ __version__ = '0.0.2'
 c = Colorize()
 
 
-def gauge(value, max_value, width, danger_zone, suffix):
+def gauge(value, max_value, width, danger_zone, suffix=None):
     if max_value == 0:
         return '[]'
 
@@ -62,3 +62,16 @@ class Spinner:
 
         return ['◜', '◠', '◝', '◞', '◡', '◟']
         # return ['⣾', '⣽', '⣻', '⢿', '⡿', '⣟', '⣯', '⣷']
+
+
+if __name__ == '__main__':
+    import time
+
+    spinner = Spinner('0 Documents')
+    spinner.run()
+
+    for x in range(100):
+        spinner.update_msg('{0} Documents'.format(x))
+        spinner.run()
+
+        time.sleep(0.2)
