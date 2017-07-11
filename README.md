@@ -64,4 +64,4 @@ print(gauge(used, total, 20, total * 0.8, 'Used memory'))
 ```
 
 ## Motivation
-  1. clui makes NodeJS even more sexy. Python needed something like it.
+  1. [clui](https://github.com/nathanpeck/clui) makes NodeJS even more sexy. Python needed something like it.
