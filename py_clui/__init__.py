@@ -1,12 +1,8 @@
-#!/usr/bin/env python
-# https://en.wikipedia.org/wiki/ANSI_escape_code#Colors
-# http://aurelio.net/shell/canivete/
-# https://stackoverflow.com/questions/27265322/how-to-print-to-console-in-color
-
 import math
 import sys
 
 from .colorize import Colorize
+
 
 __author__ = 'Henrique Leal'
 __author_email__ = 'hm.leal@hotmail.com'
