@@ -62,16 +62,3 @@ class Spinner:
 
         return ['◜', '◠', '◝', '◞', '◡', '◟']
         # return ['⣾', '⣽', '⣻', '⢿', '⡿', '⣟', '⣯', '⣷']
-
-
-if __name__ == '__main__':
-    import time
-
-    spinner = Spinner('0 Documents')
-    spinner.run()
-
-    for x in range(100):
-        spinner.update_msg('{0} Documents'.format(x))
-        spinner.run()
-
-        time.sleep(0.2)
