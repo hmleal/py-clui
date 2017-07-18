@@ -7,6 +7,7 @@ It also includes the following easy to use components:
 
 * Spinners
 * Gauge
+* Progress
 
 ### Spinner(message, style=None)
 
@@ -61,6 +62,26 @@ free = 30
 used = total - free
 
 print(gauge(used, total, 20, total * 0.8, 'Used memory'))
+```
+
+### Progress(width=20)
+
+__Parameters__
+
+* `width` - The width in characters of progress_bar
+
+__Methods__
+
+* `update(percent)` - Return a progress bar width a this percente filled.
+
+__Example__
+
+```python
+from py_clui import Progress
+
+progress = Progress(20)
+
+print(progress.update(.5))
 ```
 
 ## Motivation

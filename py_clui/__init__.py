@@ -34,6 +34,29 @@ def gauge(value, max_value, width, danger_zone, suffix=None):
     return '[{0}] {1}'.format(bars, suffix)
 
 
+class Progress:
+    def __init__(self, width=100):
+        self.width = width
+        self.current_value = 0
+
+    def update(self, current_value):
+        self.current_value = current_value
+
+        return "[{0}{1}] {2}".format(
+            c.green('|' * self.bar_length),
+            '-' * (self.width - self.bar_length),
+            c.grey('{0}%'.format(self.percent))
+        )
+
+    @property
+    def percent(self):
+        return int(self.current_value * 100)
+
+    @property
+    def bar_length(self):
+        return math.ceil(self.width * self.percent / 100)
+
+
 class Spinner:
     def __init__(self, message, style=None):
         self.message = message
