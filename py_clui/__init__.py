@@ -77,7 +77,7 @@ class Spinner:
             return style
 
         if sys.platform == 'win32':
-            return ['|','/', '-', '\\']
+            return ['|', '/', '-', '\\']
 
         return ['◜', '◠', '◝', '◞', '◡', '◟']
         # return ['⣾', '⣽', '⣻', '⢿', '⡿', '⣟', '⣯', '⣷']
