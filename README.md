@@ -66,6 +66,8 @@ print(gauge(used, total, 20, total * 0.8, 'Used memory'))
 
 ### Progress(width=20)
 
+![Picture of a progress](https://raw.githubusercontent.com/hmleal/py-clui/master/docs/progress.png)
+
 __Parameters__
 
 * `width` - The width in characters of progress_bar
