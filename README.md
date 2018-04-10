@@ -2,6 +2,7 @@
 > This is a Python toolkit for quickly building nice looking command line interfaces.
 
 [![Build Status](https://travis-ci.org/hmleal/py-clui.svg?branch=master)](https://travis-ci.org/hmleal/py-clui)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black)
 
 It also includes the following easy to use components:
 
