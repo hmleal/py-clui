@@ -6,7 +6,7 @@ from .colorize import Colorize
 
 __author__ = "Henrique Leal"
 __author_email__ = "hm.leal@hotmail.com"
-__version__ = "0.0.2"
+__version__ = "0.0.3"
 
 
 c = Colorize()

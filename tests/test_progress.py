@@ -4,6 +4,7 @@ from py_clui import Progress
 
 
 class TestProgress(unittest.TestCase):
+
     def setUp(self):
         self.progress = Progress(width=100)
 
